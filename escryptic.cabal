@@ -1,0 +1,20 @@
+cabal-version:   3.0
+name:            escryptic
+version:         0.1.0.0
+license:         GPL-3.0-only
+license-file:    LICENSE
+author:          roguehashrate
+maintainer:      none
+category:        Password Manager
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+common warnings
+    ghc-options: -Wall
+
+executable escryptic
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.18.3.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
